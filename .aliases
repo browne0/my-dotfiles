@@ -23,3 +23,12 @@ alias sudo='sudo '
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Git related stuff
+ # Removes all local branches except master
+ alias gbr="git branch | grep -v "master" | xargs git branch -D"
+ # shortens git checkout
+ alias gco="g checkout"
+ alias g="git"
+ alias gp="g pull"
+ alias gs="g status"
